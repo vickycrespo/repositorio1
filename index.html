@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <div>
-            <h2>ORANGE</h2>
-            <nav><a href="#Benefit">Benefit</a> <a href="#Pricing">Princing</a> <a href="#Testimonials">Testimonials</a></nav>
-        </div>
-        <div>
+        <header>
+            <h2 class="brand">ORANGE</h2>
+            <nav class="topnav"><a href="#Benefit">Benefit</a> <a href="#Pricing">Princing</a> <a href="#Testimonials">Testimonials</a></nav>
+        </header>
+        <div class="banner">
             <img src="./imgs/iPhone_mockup_header_mobile.png" alt="image of a smartphone with showing an orange on white background">
             <h1>Subscribe today and get notified first when we launch Orange app!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-            <!-- botón -->
+            <h5 class="subtitlebanner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</h5>
             <form action="post" method="">
                 <input type="email" name="" id="" placeholder="Your email address">
+                <br>
                 <button type="submit">Subscribe</button>
                 <!-- NAME ID ES PARA BACKEND, NO PASA NADA NO PONERLO -->
             </form>
@@ -25,17 +27,17 @@
     <section id="Benefit">
         <article>
             <img src="./imgs/illustration 1.png" alt="illustration of a big negative percentage symbol">
-            <h3>Title 1</h3>
+            <h4 class="underline">Title 1</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </article>
         <article>
             <img src="./imgs/illustration 2.png" alt="illustration of a female and male doctors">
-            <h3>Title 2</h3>
+            <h4 class="underline">Title 2</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </article>
         <article>
             <img src="./imgs/illustration 3.png" alt="illustration of a woman and a man hugging and big ball with a smile face on it">
-            <h3>Title 3</h3>
+            <h4 class="underline">Title 3</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </article>
     </section>
@@ -43,9 +45,9 @@
         <img src="./imgs/mockup_con_fondo_naranja.png" alt="image of a smartphone with showing an orange on white background">
         <div>
             <div>
-                <h1>It tastes like Premium.</h1>
+                <h1 class="rose">It tastes like Premium.</h1>
                 <h3>Better than an apple.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <!-- botón -->
         </div>
@@ -54,30 +56,37 @@
         <img src="./imgs/rectangle orange.png" alt="orange rectangle">
         <!-- comillas es image? -->
         <div>
-            <p>What Our Customers Say</p>
+            <h5 class="rose">What Our Customers Say</h5>
             <img src="./imgs/comillas.png" alt="illustration comillas">
         </div>
         <div>
+            <img src="./imgs/quote white.png" alt="quotes white">
             <img src="./imgs/cardblue.png" alt="card azul">
-            <p>“I love oranges!! tasty mmmmm…..”</p>
-            <p><b>Marjon Siero /</b> Ironhack</p>
+            <h4 class="white">“I love oranges!! tasty mmmmm…..”</h4>
+            <h4 class="white">Marjon Siero / Ironhack</h4>
         </div>
     </section>
     <section>
         <div>
-            <h1>Subscribe today and get notified first!</h1>
-            <h3>Product launch in: 12 days</h3>
+            <h1 class="rose">Subscribe today and get notified first!</h1>
+            <h3 class="gray">Product launch in: 12 days</h3>
         </div>
         <div>
-           <!-- form -->
-           <!-- botón -->
+            <form class="field" action="post" method="">
+                <input type="email" name="" id="" placeholder="Your email address">
+                <br>
+                <button class="subscribe" type="submit">Subscribe</button>
+                <!-- NAME ID ES PARA BACKEND, NO PASA NADA NO PONERLO -->
+            </form>
         </div>
     </section>
     <footer>
-        <p>© 2019 Orange All Right Reserved</p>
-        <nav>
-        <a href="#Benefit">Benefit</a>/<a href="#Pricing">Pricing</a>/<a href="#Testimonials">Testimonials</a>
-        </nav>
+        <div>
+            <h5>© 2019 Orange All Right Reserved</h5>
+            <nav class="bottomnav">
+                <a href="#Benefit">Benefit</a>/<a href="#Pricing">Pricing</a>/<a href="#Testimonials">Testimonials</a>
+            </nav>
+        </div> 
     </footer>
 </body>
 </html>

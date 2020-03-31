@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.field{
+
+}
+
+.subscribe {
+
+}
+
+h1 {
+    font: 700 30px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+h2{
+    font: 900 26px;
+    color: white;
+}
+
+h3{
+    font: 500 26px;
+    color: #031D5B;
+    text-align: center;
+}
+
+h4{
+    font: 500 18px;
+    color: #031D5B;
+}
+
+h5{
+    font: 700 16px;
+    color: white;
+    line-height: 32px;
+}
+
+h6{
+    font: 500 16px;
+}
+
+p{
+    font: 500 16px;
+    line-height: 32px;
+    color: #5B6C94;
+}
+
+nav{
+    font: 700 16px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+article{
+    margin-bottom: 71px;
+}
+
+.subtitlebanner{
+    text-align: center;
+    margin-top: 34px;
+}
+
+#Benefit{
+    width: 85%;
+    border: 3px black;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -64px;
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+    padding: 60px 20px 0 20px;
+/*     box-shadow: black;
+ */}
+
+img{
+    margin-bottom: 60px;
+}
+
+.underline{
+    padding-bottom: 26px;
+    width: 50px;
+    border-bottom: 5px solid coral;
+    margin-bottom: 30px;
+}
+
+.center{
+    text-align: center;
+
+}
+
+.rose{
+    color: #F8765E;
+}
+
+.white{
+    color: rgb(255, 255, 255);
+}
+
+.gray{
+    color: #CDCDCD;
+}
+
+header{
+    background-color: #F8765E;
+}
+
+footer{
+    background-color: #F8765E;
+    height: 164px;
+    position: relative;
+}
+
+a {
+    margin: 19px;
+}
+
+.brand{
+    height: 77px;
+    background-color: #F8765E;
+    padding: 44px;
+}
+
+.topnav{
+    margin-right: 33px;
+    padding-bottom: 71px;
+    text-align: right;
+}
+
+.bottomnav{
+    margin: 42px 0 50px 0;
+    position: sticky;
+}
+
+footer > div{
+    text-align: center;
+    position: relative;
+    top: 37px;
+}
+
+button{
+    width: 168px;
+    height: 60px;
+    align-content: center;
+    border-radius: 20px;
+    border-style: none;
+    margin: 22px 0 100px 0;
+    background-color: #9BDBE7;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.banner{
+    background-color: #F8765E;
+    text-align: center;
+/* !!!quiero alinear al centro*/
+}
+
+input{
+    height: 60px;
+    width: 335px;
+    border-style: none;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 41px;
+    box-shadow: inset 0px 1px 5px 0px rgba(0,0,0,0.2);
+}
+
+::placeholder{
+    font-weight: 700;
+    font-size: 17px;
+    color: #CDCDCD;
+}
