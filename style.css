@@ -16,46 +16,54 @@ body{
 } */
 
 h1 {
-    font: 700 30px;
+    font-weight: 700;
+    font-size: 30px;
     color: white;
     text-align: center;
     line-height: 40px;
 }
 
 h2{
-    font: 900 26px;
+    font-weight: 900;
+    font-size: 26px;   
     color: white;
 }
 
 h3{
-    font: 500 26px;
+    font-weight: 500;
+    font-size: 26px;
     color: #031D5B;
     text-align: center;
 }
 
 h4{
-    font: 500 18px;
+    font-weight: 500;
+    font-size: 18px;
     color: #031D5B;
 }
 
 h5{
-    font: 700 16px;
+    font-weight: 500;
+    font-size: 16px;
     color: white;
     line-height: 32px;
 }
 
 h6{
-    font: 500 16px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 p{
-    font: 500 16px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 32px;
     color: #5B6C94;
 }
 
 nav{
-    font: 700 16px;
+    font-weight: 700;
+    font-size: 16px;
     color: white;
 }
 
@@ -78,11 +86,11 @@ article{
 
 .subtitlebanner{
     text-align: center;
-    margin-top: 34px;
+    margin-top: 20px;
 }
 
 #Benefit{
-    width: 78%;
+    width: 83%;
     border: 3px black;
     background-color: rgb(255, 255, 255);
     position: relative;
@@ -99,18 +107,23 @@ article{
     text-align: center;
  }
 
-img{
+.imgtitle{
     margin-bottom: 60px;
 }
 
 .underline{
+    max-width: 4rem;
     padding-bottom: 20px;
-    width: 55px;
     border-bottom: 5px solid coral;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .center{
+    text-align: center;
+}
+
+.subscribe{
     text-align: center;
 }
 
@@ -136,7 +149,12 @@ img{
 
 header{
     background-color: #F8765E;
+    align-items: center;
     text-align: center;
+}
+
+.imgbanner {
+    margin-bottom: 30px;
 }
 
 footer{
@@ -152,26 +170,28 @@ a {
 .brand{
     height: 77px;
     background-color: #F8765E;
-    padding: 44px;
+    padding: 44px 19px;
 }
 
 .topnav{
-    padding-right: 33px;
-    padding-bottom: 71px;
-/*     margin-top: -56px;
- */    /*  padding-top: none;
- */ text-align: right;
+    padding-top: 20px;
+    padding-bottom: 65px;
+/*      margin-top: -56px;
+        padding-top: none;*/
 }
 
 .bottomnav{
-    margin: 42px 0 50px 0;
-    position: sticky;
+    padding-top: 30px;
+    position: relative;
 }
 
-footer > div{
+.copyright{
+    padding-top: 38px;
+}
+
+footer {
     text-align: center;
-    position: relative;
-    top: 37px;
+    height: 164px;
 }
 
 button{
@@ -188,6 +208,8 @@ button{
 }
 
 .banner{
+/*  display:flex;
+    flex-direction: column; */
     background-color: #F8765E;
     text-align: center;
     padding: 0 30px;
@@ -216,6 +238,7 @@ input{
 }
 
 .mockuporange{
+    max-width: 70%;
     margin-top: 36px;
     margin-bottom: 68px;
 }
@@ -223,7 +246,7 @@ input{
 .comillas{
     width: 165px;
     height: 165px;
-    background-image: url(./imgs/comillas.png);
+    background-image: url(./imgs/comillas-gr.png);
     background-position: initial;
     background-size: 165px;
     background-repeat: no-repeat;
@@ -255,10 +278,32 @@ input{
     margin: 10px 30px 280px 30px;
 }
 
+.whitebox{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 12px 12px 40px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 152px 5px 0 50px;
+   display: inline-block;
+   position: absolute;
+   top: 245px;
+   left: 350px;
+}
+
+.graydark{
+    color: #3F3F3F;
+}
+
+.graymid{
+    color: #7C7C7C;
+}
+
 .comillawhite{
     position: absolute;
     top: 80px;
-}
+/*     margin-bottom: 70px;
+ */}
 
 .ilove{
     width: auto;
@@ -271,3 +316,215 @@ input{
     position: relative;
 }
 
+
+@media (min-width: 850px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
+    .brand{
+        padding-top: 0px;
+    }
+
+    .none{
+        display: none;
+    }
+
+    /* 
+    .topnav{
+        display: inline;
+        text-align: right;
+    } */
+
+
+    .banner{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 11%;
+/*         width: 78%;
+ */    }
+
+ .textbanner > h1{
+    padding-top: 100px;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: left;
+}
+
+    .imgbanner{
+        width: 40%;
+    }
+
+    .textbanner > h5{
+        text-align: left;
+    }
+
+    .textbanner{
+        max-width: 50%;
+    }
+
+    article{
+        max-width: 33%;
+        display: inline-block;
+        padding: 0px 20px;
+        margin-top: 0px;
+/*      margin: 0 10px;
+ */
+    }
+
+    .topmargin{
+        margin-top: 0px;
+    }
+
+    .textbanner > form{
+        margin-bottom: 100px;        
+    }
+
+    #benefit{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: justify;
+        align-items: justify;
+        padding: 0px 60px 0px 71px;
+    }
+
+    #Pricing{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 8% 200px 8%;
+    }
+
+    .sectionprice{
+        text-align: right;
+        padding: 0px;
+        max-width: 50%;
+    }
+
+    
+    .textprice{
+        /*   padding-top: 100px; */
+        /*  font-size: 48px; */
+        /*    line-height: 60px; */
+        text-align: right;
+    }
+
+    .sectionprice > h1{
+        padding-top: 100px;
+        font-size: 48px;
+        margin-right: 0px;
+    }
+
+    .sectionprice > h3{
+        font-size: 34px;
+        line-height: 45px;
+        margin-right: 0px;
+    }
+
+    .sectionprice > p{
+        margin-right: 0px;
+    }
+
+    .side30{
+        display: unset;
+    }
+    
+    .center{
+        text-align: right;
+    }
+
+    .mockuporange{
+        max-width: 38%;
+    }
+      
+    .orangebox{
+        width: 810px;
+        height: 950px;
+        background-color: #F8765E;
+        border-radius: 20px;
+        position: absolute;
+        top: 111px;
+        margin: -160px 0 10px 46%;
+        z-index: -1;
+    }
+
+    .comillas{
+        width: 378px;
+        height: 413px;
+        background-size: 378px;
+        margin: 25px 0px 0px 8%;
+    }
+    
+    #Testimonials h5{
+        font-size: 40px;
+        line-height: 48px;
+        padding-left: 25px;
+        padding-top: 46px;
+    }
+
+    .bluebox{
+        width: 420px;
+        height: 500px;
+        position: relative;
+        top: 70px;
+        margin: -290px 30px 280px 30%;
+    }
+
+    .ilove{
+        width: auto;
+        height: auto;
+        line-height: 36px;
+        margin: 0px 50px 170px 0px;
+    }
+
+    .whitebox{
+        width: 420px;
+        height: 500px;
+        position: absolute;
+        top: 193px;
+        left: 850px;    
+    }
+
+    .subscribe > h1{
+        margin-top: 400px;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .subscribe > h3{
+        margin-top: 38px;
+        margin-bottom: 20px;
+        font-size: 34px;
+        line-height: 45px;
+    }    
+
+    
+    input{
+        margin: 0px 7px 0px 0px;
+    }
+    
+    .field > .subscribe{
+        margin: 0px 0px 0px 7px;
+    }
+    
+    .subscribe > .field{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 70px 0 140px 0;
+
+    }
+
+
+}
