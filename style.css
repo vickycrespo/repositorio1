@@ -157,6 +157,11 @@ header{
     margin-bottom: 30px;
 }
 
+.textbanner > form{
+    padding-bottom: 70px;
+}
+
+
 footer{
     background-color: #F8765E;
     height: 164px;
@@ -352,11 +357,11 @@ input{
 /*         width: 78%;
  */    }
 
- .textbanner > h1{
-    padding-top: 100px;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: left;
+    .textbanner > h1{
+        padding-top: 100px;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: left;
 }
 
     .imgbanner{
@@ -385,7 +390,12 @@ input{
     }
 
     .textbanner > form{
-        margin-bottom: 100px;        
+        margin-bottom: 60px; 
+        text-align: left;       
+    }
+
+    .subtitlebanner{
+        margin-bottom: 20px;
     }
 
     #benefit{
